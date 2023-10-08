@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Workout</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hello">
+        <form id="nameForm">
+            <h2>Please enter your name</h2>
+            <input type="text" id="userName" placeholder="Your Name">
+        </form>
+        <div id="greetUser"></div>
+    </section>
+    <section class="clock">
+        <h2>Current Time</h2>
+        <div id="time"></div>
+    </section>
+    <section class="age">
+        <form id="ageForm">
+            <h2>Please enter your birthday</h2>
+            <input type="date" id="birthday">
+        </form>
+        <div id="userAge"></div>
+    </section>
+    <section class="form">
+        <form id="userForm">
+            <label for="pet">What is your favorite pet?</label>
+            <select name="pet" id="pet">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <label>What drink do you like the most?</label>
+            <input type="radio" id="drink1" name="drink" value="coffee">
+            <label for="drink1">Coffee ☕</label>
+            <input type="radio" id="drink2" name="drink" value="tea">
+            <label for="drink2">Tea 🍵</label>
+            <input type="radio" id="drink3" name="drink" value="water">
+            <label for="drink3">Water 💪😤</label>
+            <br>
+            <label for="hobbies">What are your hobbies?</label>
+            <input type="text" id="hobbies" placeholder="Enter your hobbies">
+            <br>
+            <label for="mood">Select how's your mood right now:</label>
+            <input type="checkbox" id="happy" name="mood" value="happy">
+            <label for="happy">Happy 😊</label>
+            <input type="checkbox" id="notSoHappy" name="mood" value="notSoHappy">
+            <label for="notSoHappy">Not So Happy 😐</label>
+            <input type="checkbox" id="sad" name="mood" value="sad">
+            <label for="sad">Sad 😢</label>
+            <br>
+            <label for="color">What is your favorite color?</label>
+            <input type="color" id="color" name="color" value="#ff0000">
+            <br>
+            <button type="button" id="submitForm">Submit</button>
+        </form>
+        <div id="formResults"></div>
+    </section>
+</body>
+</html>
